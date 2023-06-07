@@ -1,5 +1,4 @@
 const mongoose = require('mongoose')
-const uri = "mongodb+srv://aniket:abc%40123@authcluster.y2j86kw.mongodb.net/?retryWrites=true&w=majority";
 
 mongoose.connect(
   process.env.MONGOOSE_URL,

@@ -1,8 +1,17 @@
+
+##
 GET http://localhost:5000/
+authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2ODYxNjM1MjQsImV4cCI6MTY4NjE2MzUzNCwiYXVkIjoiNjQ4MGIxNDA3ODZhNTQxNTFmNDAwOTcwIiwiaXNzIjoiYW5pa2V0ay5pbiJ9.qRM0gJFRL5F4nOybWnUpcDLurtrQlu0CYPP3fhzX0LU
 
 ### Login Route
 
 POST http://localhost:5000/auth/login
+content-type: application/json
+
+{
+    "email": "aniket123456@aniket.com",
+    "password": "hello"
+}
 
 
 ### Register Route
@@ -11,8 +20,8 @@ POST http://localhost:5000/auth/register
 content-type: application/json
 
 {
-    "email": "anket122",
-    "password": "1234"
+    "email": "aniket123456@aniket.com",
+    "password": "hello"
 }
 
 ### Refresh Token Route

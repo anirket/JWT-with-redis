@@ -3,6 +3,7 @@ const express = require('express');
 const morgan = require('morgan');
 const createErrors = require('http-errors');
 const AuthRoutes = require('./Routes/Auth.route');
+const { verifyAccessToken } = require('./Helpers/generate_token');
 require('./Helpers/init_MongoDb')
 
 const app = express();
@@ -11,7 +12,7 @@ app.use(morgan('short'))
 app.use(express.json())
 app.use(express.urlencoded({extended: true}))
 
-app.get('/', async(req, res, next) => {
+app.get('/', verifyAccessToken, async(req, res, next) => {
     res.send('Hello')
 })
 
