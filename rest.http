@@ -30,7 +30,7 @@ POST http://localhost:5000/auth/refresh-token
 Content-Type: application/json
 
 {
-    "refresh_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2ODYxNzAzNDksImV4cCI6MTcxNzcyNzk0OSwiYXVkIjoiNjQ4MGU4OWM4MTRkZDI2NWI4MGNiZDEyIiwiaXNzIjoiYW5pa2V0ay5pbiJ9.ZMsgk4G5GAJnGoY6r0Ze8Le_NJDPckaB_HXAX9aGTvo"
+    "refresh_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2ODYxNzExNzEsImV4cCI6MTcxNzcyODc3MSwiYXVkIjoiNjQ4MGVlMjIyNWYxYzE4NjU5ODNkYTc1IiwiaXNzIjoiYW5pa2V0ay5pbiJ9.DFQ9Xj1qAs7R8auOE9xyLzqhZopZn25fI5lOEqPae1I"
 }
 
 ### Refresh Token Route
@@ -39,5 +39,5 @@ DELETE http://localhost:5000/auth/logout
 Content-Type: application/json
 
 {
-    "refresh_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2ODYxNzA4MDksImV4cCI6MTcxNzcyODQwOSwiYXVkIjoiNjQ4MGU4OWM4MTRkZDI2NWI4MGNiZDEyIiwiaXNzIjoiYW5pa2V0ay5pbiJ9.XLq_2APt_dkSWGq72RedrjwYVXR1E1ztXDOUdUGvFs0"
+    "refresh_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2ODYxNzExODYsImV4cCI6MTcxNzcyODc4NiwiYXVkIjoiNjQ4MGVlMjIyNWYxYzE4NjU5ODNkYTc1IiwiaXNzIjoiYW5pa2V0ay5pbiJ9.O7q6CZX48_-JMYrUa5G0GUaET-BcUTF2BM2HjaY3fs4"
 }
