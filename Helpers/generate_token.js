@@ -2,10 +2,6 @@ const JWT = require('jsonwebtoken');
 const createErrors = require('http-errors');
 const client = require('./init_redis');
 
-
-
-
-
 module.exports = {
     signAccessToken: (userId) => {
         return new Promise((resolve, reject) => {
