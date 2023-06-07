@@ -1,7 +1,7 @@
 
 ##
 GET http://localhost:5000/
-authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2ODYxNjM1MjQsImV4cCI6MTY4NjE2MzUzNCwiYXVkIjoiNjQ4MGIxNDA3ODZhNTQxNTFmNDAwOTcwIiwiaXNzIjoiYW5pa2V0ay5pbiJ9.qRM0gJFRL5F4nOybWnUpcDLurtrQlu0CYPP3fhzX0LU
+authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2ODYxNjM5MjEsImV4cCI6MTY4NjE2Mzk1MSwiYXVkIjoiNjQ4MGIxNDA3ODZhNTQxNTFmNDAwOTcwIiwiaXNzIjoiYW5pa2V0ay5pbiJ9.OaRdm6prDt_ZgwYvlBfRdE79xPXEbs96wDGa7ddXNRg
 
 ### Login Route
 
@@ -9,7 +9,7 @@ POST http://localhost:5000/auth/login
 content-type: application/json
 
 {
-    "email": "aniket123456@aniket.com",
+    "email": "aniket123@aniket.com",
     "password": "hello"
 }
 
@@ -20,14 +20,24 @@ POST http://localhost:5000/auth/register
 content-type: application/json
 
 {
-    "email": "aniket123456@aniket.com",
+    "email": "aniket1233@aniket.com",
     "password": "hello"
 }
 
 ### Refresh Token Route
 
 POST http://localhost:5000/auth/refresh-token
+Content-Type: application/json
+
+{
+    "refresh_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2ODYxNzAzNDksImV4cCI6MTcxNzcyNzk0OSwiYXVkIjoiNjQ4MGU4OWM4MTRkZDI2NWI4MGNiZDEyIiwiaXNzIjoiYW5pa2V0ay5pbiJ9.ZMsgk4G5GAJnGoY6r0Ze8Le_NJDPckaB_HXAX9aGTvo"
+}
 
 ### Refresh Token Route
 
 DELETE http://localhost:5000/auth/logout
+Content-Type: application/json
+
+{
+    "refresh_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2ODYxNzA4MDksImV4cCI6MTcxNzcyODQwOSwiYXVkIjoiNjQ4MGU4OWM4MTRkZDI2NWI4MGNiZDEyIiwiaXNzIjoiYW5pa2V0ay5pbiJ9.XLq_2APt_dkSWGq72RedrjwYVXR1E1ztXDOUdUGvFs0"
+}
